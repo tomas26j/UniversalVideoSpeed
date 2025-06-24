@@ -1,0 +1,133 @@
+body, .container {
+  background: #181a1b !important;
+  color: #f1f1f1 !important;
+}
+.container {
+  min-width: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.btn-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.1em;
+  color: #f1f1f1;
+}
+select, button, input {
+  margin: 8px 0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 1em;
+  background: #23272a;
+  color: #f1f1f1;
+}
+select:focus, input:focus {
+  outline: 2px solid #2196F3;
+  background: #23272a;
+}
+button {
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #2196F3;
+}
+#customSpeedContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+}
+#customSpeedInput {
+  width: 80px;
+  text-align: center;
+  background: #23272a;
+  color: #f1f1f1;
+  border: 1px solid #333;
+}
+.speed-unit {
+  font-size: 1em;
+  color: #aaa;
+}
+#videosList {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  max-height: 160px;
+  overflow-y: auto;
+}
+.video-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+.video-item img {
+  margin: 0 8px;
+  border-radius: 4px;
+  border: 1px solid #222;
+  background: #23272a;
+}
+.video-item input[type="checkbox"] {
+  margin-right: 6px;
+  accent-color: #2196F3;
+}
+
+/* Panel flotante de video */
+.uvs-float-panel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34,34,34,0.92);
+  color: #fff;
+  border-radius: 12px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  user-select: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  font-size: 1.1em;
+  height: 40px;
+  pointer-events: auto;
+}
+.uvs-btn, .uvs-close {
+  background: #23272a;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  pointer-events: auto;
+}
+.uvs-btn:hover, .uvs-close:hover {
+  background: #2196F3;
+  color: #fff;
+}
+.uvs-speed {
+  min-width: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05em;
+} 
